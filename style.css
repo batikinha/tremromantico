@@ -17,7 +17,7 @@ body {
     width: 100px;
     height: 160px;
     position: relative;
-    background-color: #e93030;
+    background-color: #b2eeb4;
     border-radius: 15px;
     transform-origin: right bottom;
     animation: heart 3s ease infinite alternate;
@@ -78,7 +78,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    background-color: #d62424;
+    background-color: #81c784;
     position: absolute;
     transform-origin: left bottom;
     animation: heartafter 3s ease infinite alternate;
@@ -109,44 +109,14 @@ body {
 
 @media (max-width: 768px) {
     .heart {
-        width: 60px;
-        height: 100px;
+        width: 100px;
+        height: 160px;
+        transform: rotate(45deg) translate(-25%, -10%);
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
     }
 
     .heart:after {
-        transform: rotate(-90deg) translateY(60px);
-    }
-
-    @keyframes heartafter {
-        0% {
-            transform: rotate(0deg);
-        }
-        50%, 100% {
-            transform: rotate(-90deg) translateY(60px);
-            border-top-left-radius: 50px;
-            border-top-right-radius: 50px;
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    .heart {
-        width: 50px;
-        height: 80px;
-    }
-
-    .heart:after {
-        transform: rotate(-90deg) translateY(50px);
-    }
-
-    @keyframes heartafter {
-        0% {
-            transform: rotate(0deg);
-        }
-        50%, 100% {
-            transform: rotate(-90deg) translateY(50px);
-            border-top-left-radius: 50px;
-            border-top-right-radius: 50px;
-        }
+        transform: rotate(-90deg) translateY(100px);
     }
 }
